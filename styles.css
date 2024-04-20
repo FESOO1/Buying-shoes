@@ -102,6 +102,8 @@ nav {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* LEFT */
+
 .content-left {
     height: 100%;
     display: flex;
@@ -133,6 +135,8 @@ nav {
     cursor: pointer;
 }
 
+/* RIGHT */
+
 .content-right {
     font-family: var(--f-all);
     height: 100%;
@@ -152,4 +156,26 @@ nav {
 .content-text > h1 {
     font-size: 3rem;
     padding-right: 30px;
+}
+
+.content-text > p {
+    margin: 20px 0;
+    color: gray;
+}
+
+/* PRICE */
+
+.price {
+    width: 100%;
+}
+
+.price > span {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* CART */
+
+.add-to-cart {
+    display: flex;
 }
