@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root {
+    --f-all: "Kumbh Sans", sans-serif;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    padding-inline: 200px;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+    height: 100%;
+}
+
+.nav-left > .nav-links {
+    display: flex;
+    column-gap: 15px;
+    height: 100%;
+}
+
+.nav-left > .nav-links > a {
+    font-family: var(--f-all);
+    font-weight: 400;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+    padding-inline: 5px;
+    transition: 200ms;
+}
+
+.nav-left > .nav-links > a:hover {
+    color: black;
+}
+
+/* .nav-left > .nav-links > .link::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: hsl(26, 100%, 55%);
+    display: inline-block;
+} */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.nav-right > .nav-cart {
+    border-radius: 5rem;
+    display: flex;
+}
+
+.nav-right > .nav-cart > svg {
+    cursor: pointer;
+}
+
+.nav-right > .nav-account > img {
+    width: 42px;
+    height: 42px;
+    border: 2px solid orange;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+/* CONTENT */
+
+.content {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.content-left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.main-img {
+    width: 72%;
+}
+
+.main-img > img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.mini-pictures {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.mini-pictures > img {
+    width: 90px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
