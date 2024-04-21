@@ -152,6 +152,67 @@ nav {
 .shoe {
     width: 100%;
     height: calc(230px - 61px);
+    display: flex;
+    flex-direction: column;
+    padding-block: 20px;
+    padding-inline: 15px;
+    justify-content: space-between;
+}
+
+.shoe-itself {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+
+.shoe-itself > img {
+    width: 45px;
+    border-radius: 0.5rem;
+}
+
+.shoe-text-price {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+
+.shoe-text-price > span:nth-of-type(2) > span:nth-of-type(1) {
+    margin-right: 10px;
+}
+
+.shoe-text-price > span:nth-of-type(2) > span:nth-of-type(2) {
+    font-weight: 900;
+    color: black;
+}
+
+.shoe-itself > button {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.shoe-itself > button > svg {
+    fill: rgb(122, 122, 122);
+}
+
+.checkout-btn {
+    height: 55px;
+    border: 0;
+    border-radius: 0.5rem;
+    color: white;
+    background-color: var(--c-orange);
+    font-weight: bold;
+    font-family: var(--f-all);
+    cursor: pointer;
 }
 
 /* CONTENT */
