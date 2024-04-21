@@ -2,6 +2,7 @@
 
 :root {
     --f-all: "Kumbh Sans", sans-serif;
+    --c-orange: rgb(241, 137, 18);
 }
 
 
@@ -88,7 +89,7 @@ nav {
 .nav-right > .nav-account > img {
     width: 42px;
     height: 42px;
-    border: 2px solid orange;
+    border: 2px solid var(--c-orange);
     border-radius: 5rem;
     cursor: pointer;
 }
@@ -151,7 +152,7 @@ nav {
 .content-text > span {
     font-weight: bold;
     font-size: 0.9rem;
-    color: orange;
+    color: var(--c-orange);
 }
 
 .content-text > h1 {
@@ -202,7 +203,7 @@ nav {
     height: 100%;
     font-weight: bold;
     font-size: 1.8rem;
-    color: orange;
+    color: var(--c-orange);
     cursor: pointer;
     padding-left: 17px;
 }
@@ -218,7 +219,7 @@ nav {
     height: 45px;
     border-radius: 0.5rem;
     border: 0;
-    background-color: orange;
+    background-color: var(--c-orange);
     display: flex;
     align-items: center;
     justify-content: center;
