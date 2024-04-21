@@ -110,7 +110,8 @@ nav {
 /* CART */
 
 .cart {
-    display: none;
+    /* display: none; */
+    display: unset;
     width: 300px;
     height: 230px;
     background: white;
@@ -146,6 +147,11 @@ nav {
     width: 100%;
     height: calc(230px - 60px);
     color: rgba(28, 28, 28, 0.5);
+}
+
+.shoe {
+    width: 100%;
+    height: calc(230px - 61px);
 }
 
 /* CONTENT */
