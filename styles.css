@@ -110,8 +110,7 @@ nav {
 /* CART */
 
 .cart {
-    /* display: none; */
-    display: unset;
+    display: none;
     width: 300px;
     height: 230px;
     background: white;
@@ -152,7 +151,7 @@ nav {
 .shoe {
     width: 100%;
     height: calc(230px - 61px);
-    display: flex;
+    display: none;
     flex-direction: column;
     padding-block: 20px;
     padding-inline: 15px;

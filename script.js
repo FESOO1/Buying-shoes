@@ -24,16 +24,27 @@ cartButton.addEventListener('click', function() {
 // ADD TO CART BUTTON AND PRICES
 
 const addToCartBtn = document.querySelector('.add-cart-button');
-let price = 125;
+const productsContainer = document.querySelector('.products');
+const numberOfShoes = document.getElementById('numberOfShoes');
+const overallPrice = document.getElementById('overall-price');
+const shoeContainer = document.querySelector('.shoe');
+const deleteBtn = document.getElementById('deleteBtn');
+let price = 125.00;
 
 addToCartBtn.addEventListener('click', function() {
 
     if (number > 0) {
-        
+        shoeContainer.style.display = 'flex'
+        numberOfShoes.innerText = number;
+        price = price * number;
+        overallPrice.innerText = price;
     } else {
         alert('Please choose how many you want!')
     }
+})
 
+deleteBtn.addEventListener('click', function() {
+    shoeContainer.style.display = 'none';
 })
 
 /* PRICES */
