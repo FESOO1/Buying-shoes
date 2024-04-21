@@ -80,18 +80,31 @@ nav {
 .nav-right > .nav-cart {
     border-radius: 5rem;
     display: flex;
+    width: 35px;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    cursor: pointer;
+    background-color: transparent;
 }
 
-.nav-right > .nav-cart > svg {
-    cursor: pointer;
+.nav-cart > svg {
+    width: 26px;
+    height: 26px;
+    fill: rgb(122, 122, 122);
 }
 
 .nav-right > .nav-account > img {
-    width: 42px;
-    height: 42px;
-    border: 2px solid var(--c-orange);
+    width: 43px;
+    height: 43px;
+    border: 2px solid rgba(241, 137, 18,0.0);
     border-radius: 5rem;
     cursor: pointer;
+}
+
+.nav-right > .nav-account > img:hover {
+    border: 2px solid var(--c-orange);
 }
 
 /* CART */
