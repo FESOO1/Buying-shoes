@@ -26,6 +26,16 @@ cartButton.addEventListener('click', function() {
 const addToCartBtn = document.querySelector('.add-cart-button');
 let price = 125;
 
+addToCartBtn.addEventListener('click', function() {
+
+    if (number > 0) {
+        
+    } else {
+        alert('Please choose how many you want!')
+    }
+
+})
+
 /* PRICES */
 
 const minusNumber = document.getElementById('minusNumber');
